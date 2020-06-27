@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 require 'root/root_v2_api'
 require 'smart_proxy_rhsm'

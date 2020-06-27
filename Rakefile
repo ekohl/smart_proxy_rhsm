@@ -1,8 +1,13 @@
+# frozen_string_literal: true
+
 require 'rake'
 require 'rake/testtask'
+require 'rubocop/rake_task'
 
 desc 'Default: run unit tests.'
-task default: :test
+task default: %i[rubocop test]
+
+RuboCop::RakeTask.new
 
 desc 'Test the Foreman Proxy plugin.'
 Rake::TestTask.new(:test) do |t|

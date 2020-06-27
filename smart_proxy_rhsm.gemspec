@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/smart_proxy_rhsm/version'
 require 'date'
 
@@ -19,5 +21,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency('mocha')
   s.add_development_dependency('rack-test')
   s.add_development_dependency('rake')
+  s.add_development_dependency('rubocop')
   s.add_development_dependency('test-unit')
 end
